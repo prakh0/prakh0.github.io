@@ -16,15 +16,10 @@ title = 'The Full Stack Feed'
     weight = 1
     url = "https://github.com/prakh0"
   [[params.social]]
-    name = "Gitlab"
+    name = "leetcode"
     icon = "fa-solid fa-laptop-code fa-2x"
     weight = 2
     url = "https://leetcode.com/u/Pandey_Prakahr/"
-  [[params.social]]
-    name = "Twitter"
-    icon = "fa-brands fa-x-twitter fa-2x"
-    weight = 3
-    url = "https://twitter.com/johndoe/"
   [[params.social]]
     name = "LinkedIn"
     icon = "fa-brands fa-linkedin fa-2x"
@@ -51,12 +46,8 @@ theme = ["hugo-coder"]
   weight = 1
   url  = "posts/"
 [[menu.main]]
-  name = "Project"
-  weight = 2
-  url = "project/"
-[[menu.main]]
   name = "About"
-  weight = 3
+  weight = 2
   url = "about/"
 
 [taxonomies]

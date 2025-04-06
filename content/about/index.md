@@ -10,7 +10,7 @@ I enjoy working on:
 - Python & FastAPI backends
 - CLI tools
 - Machine learning models
-- System design and storage engines
+- Storage engines
 
 This blog is where I share ideas, projects, and my love for tech, coding, and math.  
 Feel free to connect with me on [GitHub](https://github.com/prakh0) or [LinkedIn](https://www.linkedin.com/in/prakhar-pandey-62886026b/).
