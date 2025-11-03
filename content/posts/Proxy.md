@@ -19,7 +19,7 @@ series = []
 Have you ever used Spring’s @Transactional, @Cacheable, or even a Hibernate entity that loads “just in time”?
 Guess what — you’ve already been using proxies without even realizing it.
 
-Proxies are everywhere in modern Java — silently adding features like logging, caching, or security checks — all without touching your original code.
+Proxies are everywhere in modern Java silently adding features like logging, caching, or security checks all without touching your original code.
 They’re one of those “behind the curtain” concepts that make big frameworks magical.
 
 Let’s pull that curtain back a little.
@@ -350,7 +350,7 @@ delegates to
   - Performance is critical, and you want to avoid reflection overhead.
 - Use **Dynamic Proxies** when:
   - You have many interfaces to proxy.
-  - You want to add cross-cutting concerns (like logging, security) without cluttering your business logic.
+  - You want to add cross cutting concerns (like logging, security) without cluttering your business logic.
   - You want to leverage frameworks that use dynamic proxies (like Spring). 
 
 ---
