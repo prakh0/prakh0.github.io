@@ -18,7 +18,7 @@ series = []
 
 When most people think of **binary search**, they imagine searching for an element in a sorted array. Simple, efficient, and classic. But what if I told you that binary search is capable of solving much more than just search problems?
 
-In this blog, we’ll explore how binary search can be extended to solve optimization problems using a powerful idea called **monotonic functions**. This is known as **binary search on the answer**—and it's one of the most underrated problem-solving techniques.
+In this blog, we’ll explore how binary search can be extended to solve optimization problems using a powerful idea called **monotonic functions**. This is known as **binary search on the answer** and it's one of the most underrated problemsolving techniques.
 
 ---
 
@@ -46,7 +46,7 @@ f(x):  F   F   F   T   T   T
          Transition Point
 ```
 
-This is a **monotonically increasing** function—once `f(x)` becomes `True`, it stays `True` for all greater `x`.
+This is a **monotonically increasing** function once `f(x)` becomes `True`, it stays `True` for all greater `x`.
 
 This **transition point** is exactly what binary search helps us find.
 
@@ -102,7 +102,7 @@ f(x):  F   F   F   F   F   F   F   F   F    F
 
 ---
 
-###  Step-by-Step: How to Apply Binary Search on Monotonic Functions
+###  Step by Step: How to Apply Binary Search on Monotonic Functions
 
 Let’s say we want to find the **smallest value of `x`** such that some condition `f(x)` becomes true.
 
@@ -132,7 +132,7 @@ def binary_search_answer(low, high, f):
             low = mid + 1        # search right
     return result
 ```
-## Real-Life Use Cases
+## Real Life Use Cases
 
 - **Minimize something:** Find the smallest value `x` for which some constraint becomes valid (`f(x) = True`).
 - **Maximize something:** Find the largest `x` for which the constraint still holds (`f(x) = True`).
@@ -160,7 +160,7 @@ Koko has piles of bananas and `h` hours to eat them. She can eat `k` bananas per
 piles = [3, 6, 7, 11]
 h = 8
 ```
-Step-by-Step Breakdown
+Step by Step Breakdown
 Step 1: Define the Search Space
 Koko eats at least 1 banana/hour, at most max(piles) = 11.
 ```python
