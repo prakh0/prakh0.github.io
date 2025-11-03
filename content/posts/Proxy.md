@@ -17,7 +17,7 @@ series = []
 ##  Introduction
 
 Have you ever used Spring’s @Transactional, @Cacheable, or even a Hibernate entity that loads “just in time”?
-Guess what — you’ve already been using proxies without even realizing it.
+Guess what you’ve already been using proxies without even realizing it.
 
 Proxies are everywhere in modern Java silently adding features like logging, caching, or security checks all without touching your original code.
 They’re one of those “behind the curtain” concepts that make big frameworks magical.
@@ -44,7 +44,7 @@ A proxy can:
 - Manage transactions  
 - Add caching or retry logic  
 
-So, a proxy isn’t replacing your real object — it’s just *standing in front of it*, adding some extra behavior.
+So, a proxy isn’t replacing your real object it’s just *standing in front of it*, adding some extra behavior.
 
 ---
 ##  Types of Proxies in Java
@@ -56,10 +56,10 @@ There are two main types of proxies in Java:
 ---
 ###  Static Proxies
 ### What are Static Proxies?
-A **static proxy** is the simplest kind of proxy — one you **write manually**.
+A **static proxy** is the simplest kind of proxy one you **write manually**.
 
 You literally create another class (the proxy) that implements the same interface as your real object.  
-This proxy class wraps the **real object**, and inside each method, it adds **extra behavior** — like logging, validation, or timing — before or after calling the real method.
+This proxy class wraps the **real object**, and inside each method, it adds **extra behavior** like logging, validation, or timing — before or after calling the real method.
 
 Think of it like a **personal assistant**:
 > Before you talk to the boss (real object), the assistant (proxy) takes your message, checks it, maybe notes the time, and then passes it along.
@@ -99,7 +99,7 @@ We could modify RealService, but that mixes business logic with logging logic �
 Instead of modifying RealService, let’s create a proxy class that wraps it.
 
 Step 1: Implement the same interface
- - The proxy must look like the real service — so it implements the same interface.
+ - The proxy must look like the real service so it implements the same interface.
 
 ```java
 public class ServiceProxy implements Service {
@@ -191,7 +191,7 @@ With dynamic proxies, you create a single **invocation handler** that defines th
 Then, at runtime, Java generates a proxy class that implements the desired interface and routes method calls through your invocation handler.
 
 ---
-### Here’s how it works step-by-step:
+### Here’s how it works step by step:
 
 Step 1: Create an interface
 ```java
@@ -210,7 +210,7 @@ public class RealService implements Service {
 ```
 Step 3: Create an InvocationHandler
 
-Here’s the heart of the dynamic proxy system — the InvocationHandler.
+Here’s the heart of the dynamic proxy system the InvocationHandler.
 It defines what happens when a method is called on the proxy.
 
 ```java
